@@ -1,5 +1,5 @@
 env
-settings.py
+*settings.py
 __pycache__
 *.DS_Store
 *.json
