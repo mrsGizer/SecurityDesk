@@ -31,7 +31,6 @@ class Visit(models.Model):
 def get_duration(visit):
     if visit.leaved_at is None:
         now = timezone.localtime()
-        print(now)
         timedelta = now - visit.entered_at
         duration = timedelta.total_seconds()
         return duration
@@ -48,7 +47,4 @@ def format_duration(duration):
 
 
 def is_visit_long(duration, minutes=60):
-    if duration > minutes*60:
-        return True
-    else:
-        return False
+    return duration > minutes*60
