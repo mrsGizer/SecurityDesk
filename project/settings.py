@@ -18,7 +18,7 @@ DATABASES = {
     }
 }
 
-INSTALLED_APPS = [os.getenv('INSTALLED_APPS')]
+INSTALLED_APPS = ['datacenter']
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
